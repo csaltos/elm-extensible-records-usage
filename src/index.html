@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elm extensible records usage</title>
+  <script src="sample1.js"></script>
+  <script src="sample2.js"></script>
+  <script src="sample3.js"></script>
+</head>
+<body>
+  <div id="sample1"></div>
+  <div id="sample2"></div>
+  <div id="sample3"></div>
+  <script>
+    Elm.Sample1.init({
+      node: document.getElementById("sample1")
+    });
+    Elm.Sample2.init({
+      node: document.getElementById("sample2")
+    });
+    Elm.Sample3.init({
+      node: document.getElementById("sample3")
+    });
+  </script>
+</body>
+</html>
